@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/quichealth.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Create profile Page</title>
+    </head>
+    <body>
+        <div class="col-12">
+            <div class="col-12 nav">
+                <a> <img src="Images/QuicHealth logo.png"></a>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="help_dashboard.html">Contact Us</a></li>
+                <li><a href="createprofile.html">Sign Up</a></li>
+                <li><a href="signIn.html">Sign In</a></li>
+                </ul>
+                    
+            </div>
+            <div class="col-12 navbar-second">
+            <a href="#" onclick="showDrop()" class="dropdown"><span> &#9776;</span>
+                <div class="dropdown-content1">
+                    <a href="index.html">Home</a>
+                    <a href= "AboutUs.html"> About Us</a>
+                    <a href="services.html">Our Services</a>
+                    <a href="help_dashboard.html">Contact Us</a>
+                    <a href="createprofile.html">Sign Up</a>
+                    <a href="signIn.html">Sign In</a>
+                </div>
+                </a>
+            </div>
+            
+        </div>
+        <div class=" col-12 grad1 content">
+            <div>
+                <div>
+                    <form>
+                        <p class="paragraph">Create Profile</p>
+                        <label for="fname" class="label_1">Name* </label>
+                        <br>
+                        <input type="text" id="first" name="firstname" placeholder="First Name">
+                        <input type="text" id="second" name="lastname" placeholder="Last Name"> <br>
+                    
+
+                        <label for="fname" class="label_2">Date of Birth* </label>
+                        <br>
+                        <input type="text" id="third" name="day" placeholder="Day">
+                        <input type="text" id="fourth" name="month" placeholder="Month">
+                        <input type="text" id="fifth" name="year" placeholder="Year">
+                        
+                        <br> 
+                    
+                        <label for="fname" class="label_3">Gender* </label> <br>
+                        <select class="User" name="user">
+                        <option value="select">Select</option>
+                        <option value="admin/owner">Female</option>
+                        <option value="staff">Male</option>
+                        </select> <br>
+                            
+                        <label for="lname" class="label_3">Mobile*</label> <br>
+                        <input type="text" class="User" name="mobile" placeholder="+234 - XXX - XXX - XXX">
+                        <br>
+                
+                        <label for="lname" class="label_1">Email*</label> <br>
+                        <input type="text" class="User" name="email" placeholder="example@xxxx.com">
+        
+                        <br>
+                        <label for="lname" class="label_4">Password*</label>
+                        <br>
+                        <input type="password" class="User" name="psw" placeholder="">  <br> <br>
+            
+
+                        <input type="submit" class= "signIn" value="Continue" >
+                    </form>
+                   <br> <span>Already have an account? <span class="sign_acc"><a href="signIn.html">Sign In</a></span></span><br>  <br>
+                   <div class="bottom">By Clicking "Continue", you are agreeing to the QuicHealth Terms of Use, Privacy Policy, and Telehealth Consent Policy </div>
+                </div>
+            </div>
+        
+        </div>
+            
+        <script src="js/quichealth.js"></script>
+    </body>
+</html>

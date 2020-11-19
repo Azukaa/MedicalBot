@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Appointment Page</title>
+    <link rel="stylesheet" href="css/landingpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+</head>
+<body>
+  <div class="col-12">
+    <div class="col-12 nav">
+      <a> <img src="Images/QuicHealth logo.png"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="help_dashboard.html">Contact Us</a></li>
+        <li><a href="createprofile.html">Sign Up</a></li>
+        <li><a href="signIn.html">Sign In</a></li>
+      </ul>
+
+    </div>
+    <div class="col-12 navbar-second">
+      <a href="#" onclick="showDrop()" class="dropdown"><span> &#9776;</span>
+        <div class="dropdown-content1">
+          <a href="index.html">Home</a>
+          <a href= "AboutUs.html"> About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="help_dashboard.html">Contact Us</a>
+          <a href="createprofile.html">Sign Up</a>
+          <a href="signIn.html">Sign In</a>
+      </div>
+      </a>
+    </div>
+    </div>
+    
+    <div class="grad1 col-12">
+      <div class="select-appointment">Select Appointment</div>
+
+      <div class="schedule">
+            <div class="shedule-more-info">
+                <div class="location">Location</div>
+                <div class="input-box"><input type="text" placeholder="e.g.Lekki,Lagos"></div>
+            </div>
+            <div class="shedule-more-info">
+                <div class="location">Date</div>
+                <div class="input-box"><input type="date"></div>
+            </div>
+            <div class="shedule-more-info">
+                <div class="location">Persona</div>
+                <div class="input-box"><select>
+                <option value="select">Select persona</option>
+                <option value="children">children</option>
+                <option value="adult">Adult</option>
+              </select></div>
+            </div>
+            <div class="shedule-more-info">
+                <div class="location">Specialty</div>
+                <div class="input-box"><select>
+                <option value="select">Select</option>
+                <option value="tobi">Obsterics and Gynecology</option>
+                <option value="victor">Naturopathy</option>
+                <option value="jemima">Infectious Disease</option>
+                <option value="esther">Others</option>
+              </select></div>
+            </div>
+            <div class="shedule-submit">
+                <button>Submit</button>
+            </div>
+        </div>
+
+      <div class="available">
+          <div class="available-1">Available</div>
+          <div class="horizontal-rule"><hr style="border-top: 1px solid #2fa5a9" ></div>
+      </div>
+
+      <div class="doctor-bio">
+        <div class="doctor-profile">
+            <div><img src="Images/profile-1.jpg" alt="prfile-1" class="profile-1"></div>
+            <div class="doctor-information">
+                <div class="doctor-name">Dr Alice Walton</div>
+                <div><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i></div>
+                <div class="view-profile"><a href="#">View Profile</a></div>
+                <div class="drop-down-query-selector">
+                  <div> <i class="material-icons" style="color: #2fa5a9">query_builder</i></div>
+                    <div>
+                      <select>
+                          <option value="tobi">12:00am GMT+1</option>
+                        <option value="victor">1:00am GMT+1 </option>
+                        <option value="jemima"> 2:00am GMT+1</option>
+                        <option value="esther"> 3:00am GMT+1</option>
+                        <option value="esther"> 4:00am GMT+1</option>
+                        <option value="esther"> 5:00am GMT+1</option>
+                        <option value="esther"> 6:00am GMT+1</option>
+                        <option value="esther"> 7:00am GMT+1</option>
+                        <option value="esther"> 8:00am GMT+1</option>
+                        <option value="esther"> 9:00am GMT+1</option>
+                        <option value="esther"> 10:00am GMT+1</option>
+                        <option value="esther"> 11:00am GMT+1</option>
+                        <option value="esther"> 12:00noon GMT+1</option>
+                        <option value="victor">1:00pm GMT+1 </option>
+                        <option value="jemima"> 2:00pm GMT+1</option>
+                        <option value="esther"> 3:00pm GMT+1</option>
+                        <option value="esther"> 4:00pm GMT+1</option>
+                        <option value="esther"> 5:00pm GMT+1</option>
+                        <option value="esther"> 6:00pm GMT+1</option>
+                        <option value="esther"> 7:00pm GMT+1</option>
+                        <option value="esther"> 8:00pm GMT+1</option>
+                        <option value="esther"> 9:00pm GMT+1</option>
+                        <option value="esther"> 10:00pm GMT+1</option>
+                        <option value="esther"> 11:00pm GMT+1</option>
+
+                      </select>
+                    </div>
+                    
+              
+              </div>
+            </div>
+        </div>
+        <div class="bookings">
+                <!-- <button type="button"  onclick="pageRedirect()" class = "book">Book</button>       -->
+            <div class="book"><a target="_blank" href="http://localhost:3001">Book</a></div> 
+          </div>
+      </div>
+      <hr  class="horizontal" >
+      <div class="doctor-bio">
+          <div class="doctor-profile">
+              <div><img src="Images/profile-2.jpg" alt="prfile-1" class="profile-1"></div>
+              <div class="doctor-information">
+                  <div class="doctor-name">Dr John Hopkins</div>
+                  <div><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i></div>
+                  <div class="view-profile"> <a href="#">View Profile</a></div>
+                  <div class="drop-down-query-selector">
+                  <div> <i class="material-icons"  style="color: #2fa5a9">query_builder</i></div>
+                      <div>
+                      <select>
+                          <option value="tobi">12:00am GMT+1</option>
+                          <option value="victor">1:00am GMT+1 </option>
+                          <option value="jemima"> 2:00am GMT+1</option>
+                          <option value="esther"> 3:00am GMT+1</option>
+                          <option value="esther"> 4:00am GMT+1</option>
+                          <option value="esther"> 5:00am GMT+1</option>
+                          <option value="esther"> 6:00am GMT+1</option>
+                          <option value="esther"> 7:00am GMT+1</option>
+                          <option value="esther"> 8:00am GMT+1</option>
+                          <option value="esther"> 9:00am GMT+1</option>
+                          <option value="esther"> 10:00am GMT+1</option>
+                          <option value="esther"> 11:00am GMT+1</option>
+                          <option value="esther"> 12:00noon GMT+1</option>
+                          <option value="victor">1:00pm GMT+1 </option>
+                          <option value="jemima"> 2:00pm GMT+1</option>
+                          <option value="esther"> 3:00pm GMT+1</option>
+                          <option value="esther"> 4:00pm GMT+1</option>
+                          <option value="esther"> 5:00pm GMT+1</option>
+                          <option value="esther"> 6:00pm GMT+1</option>
+                          <option value="esther"> 7:00pm GMT+1</option>
+                          <option value="esther"> 8:00pm GMT+1</option>
+                          <option value="esther"> 9:00pm GMT+1</option>
+                          <option value="esther"> 10:00pm GMT+1</option>
+                          <option value="esther"> 11:00pm GMT+1</option>
+                        </select>
+                      </div>
+              </div>
+              </div>
+          </div>
+          <div class="bookings">
+                <!-- <button type="button" onclick="pageRedirect()" class = "book">Book</button>       -->
+                
+            <div class="book"><a  target="_blank" href="http://localhost:3001">Book</a></div> 
+          </div>
+      </div>
+      <hr  class="horizontal">
+      <div class="doctor-bio">
+          <div class="doctor-profile">
+              <div><img src="Images/profile-3.jpg" alt="prfile-1" class="profile-1"></div>
+              <div class="doctor-information">
+                  <div class="doctor-name">Dr Dayo Adebola</div>
+                  <div><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i></div>
+                  <div class="view-profile"><a href="#">View Profile</a></div>
+                  <div class="drop-down-query-selector">
+                  <div> <i class="material-icons"  style="color: #2fa5a9">query_builder</i></div>
+                      <div>
+                      <select>
+                          <option value="tobi">12:00am GMT+1</option>
+                          <option value="victor">1:00am GMT+1 </option>
+                          <option value="jemima"> 2:00am GMT+1</option>
+                          <option value="esther"> 3:00am GMT+1</option>
+                          <option value="esther"> 4:00am GMT+1</option>
+                          <option value="esther"> 5:00am GMT+1</option>
+                          <option value="esther"> 6:00am GMT+1</option>
+                          <option value="esther"> 7:00am GMT+1</option>
+                          <option value="esther"> 8:00am GMT+1</option>
+                          <option value="esther"> 9:00am GMT+1</option>
+                          <option value="esther"> 10:00am GMT+1</option>
+                          <option value="esther"> 11:00am GMT+1</option>
+                          <option value="esther"> 12:00noon GMT+1</option>
+                          <option value="victor">1:00pm GMT+1 </option>
+                          <option value="jemima"> 2:00pm GMT+1</option>
+                          <option value="esther"> 3:00pm GMT+1</option>
+                          <option value="esther"> 4:00pm GMT+1</option>
+                          <option value="esther"> 5:00pm GMT+1</option>
+                          <option value="esther"> 6:00pm GMT+1</option>
+                          <option value="esther"> 7:00pm GMT+1</option>
+                          <option value="esther"> 8:00pm GMT+1</option>
+                          <option value="esther"> 9:00pm GMT+1</option>
+                          <option value="esther"> 10:00pm GMT+1</option>
+                          <option value="esther"> 11:00pm GMT+1</option>
+                        </select>
+                      </div>
+              </div>
+              </div>
+          </div>
+          <div class="bookings">                
+            <div class="book"><a target="_blank" href="http://localhost:3001">Book</a></div> 
+          </div>
+      </div>
+      <hr  class="horizontal">
+      <div class="doctor-bio">
+          <div class="doctor-profile">
+              <div><img src="Images/profile-2.jpg" alt="prfile-1" class="profile-1"></div>
+              <div class="doctor-information">
+                  <div class="doctor-name">Dr Anthony Fauci</div>
+                  <div><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i></div>
+                  <div class="view-profile"><a href="#">View Profile</a></div>
+                  <div class="drop-down-query-selector">
+                  <div> <i class="material-icons"  style="color: #2fa5a9">query_builder</i></div>
+                      <div>
+                      <select>
+                          <option value="tobi">12:00am GMT+1</option>
+                          <option value="victor">1:00am GMT+1 </option>
+                          <option value="jemima"> 2:00am GMT+1</option>
+                          <option value="esther"> 3:00am GMT+1</option>
+                          <option value="esther"> 4:00am GMT+1</option>
+                          <option value="esther"> 5:00am GMT+1</option>
+                          <option value="esther"> 6:00am GMT+1</option>
+                          <option value="esther"> 7:00am GMT+1</option>
+                          <option value="esther"> 8:00am GMT+1</option>
+                          <option value="esther"> 9:00am GMT+1</option>
+                          <option value="esther"> 10:00am GMT+1</option>
+                          <option value="esther"> 11:00am GMT+1</option>
+                          <option value="esther"> 12:00noon GMT+1</option>
+                          <option value="victor">1:00pm GMT+1 </option>
+                          <option value="jemima"> 2:00pm GMT+1</option>
+                          <option value="esther"> 3:00pm GMT+1</option>
+                          <option value="esther"> 4:00pm GMT+1</option>
+                          <option value="esther"> 5:00pm GMT+1</option>
+                          <option value="esther"> 6:00pm GMT+1</option>
+                          <option value="esther"> 7:00pm GMT+1</option>
+                          <option value="esther"> 8:00pm GMT+1</option>
+                          <option value="esther"> 9:00pm GMT+1</option>
+                          <option value="esther"> 10:00pm GMT+1</option>
+                          <option value="esther"> 11:00pm GMT+1</option>
+                        </select>
+                      </div>
+              </div>
+              </div>
+          </div>
+          <div class="bookings">
+                <!-- <button type="button" onclick="pageRedirect()" class = "book">Book</button>       -->
+                
+            <div class="book"> <a target="_blank" href="http://localhost:3001">Book</a> </div> 
+          </div>
+      </div>
+      <hr  class="horizontal">
+      <div class="doctor-bio">
+          <div class="doctor-profile">
+              <div><img src="Images/profile-3.jpg" alt="prfile-1" class="profile-1"></div>
+              <div class="doctor-information">
+                  <div class="doctor-name">Dr Anthony Fauci</div>
+                  <div><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i><i class='far fa-star'></i></div>
+                  <div class="view-profile"><a href="#">View Profile</a></div>
+                  <div class="drop-down-query-selector">
+                  <div> <i class="material-icons"  style="color: #2fa5a9">query_builder</i></div>
+                      <div>
+                      <select>
+                          <option value="tobi">12:00am GMT+1</option>
+                          <option value="victor">1:00am GMT+1 </option>
+                          <option value="jemima"> 2:00am GMT+1</option>
+                          <option value="esther"> 3:00am GMT+1</option>
+                          <option value="esther"> 4:00am GMT+1</option>
+                          <option value="esther"> 5:00am GMT+1</option>
+                          <option value="esther"> 6:00am GMT+1</option>
+                          <option value="esther"> 7:00am GMT+1</option>
+                          <option value="esther"> 8:00am GMT+1</option>
+                          <option value="esther"> 9:00am GMT+1</option>
+                          <option value="esther"> 10:00am GMT+1</option>
+                          <option value="esther"> 11:00am GMT+1</option>
+                          <option value="esther"> 12:00noon GMT+1</option>
+                          <option value="victor">1:00pm GMT+1 </option>
+                          <option value="jemima"> 2:00pm GMT+1</option>
+                          <option value="esther"> 3:00pm GMT+1</option>
+                          <option value="esther"> 4:00pm GMT+1</option>
+                          <option value="esther"> 5:00pm GMT+1</option>
+                          <option value="esther"> 6:00pm GMT+1</option>
+                          <option value="esther"> 7:00pm GMT+1</option>
+                          <option value="esther"> 8:00pm GMT+1</option>
+                          <option value="esther"> 9:00pm GMT+1</option>
+                          <option value="esther"> 10:00pm GMT+1</option>
+                          <option value="esther"> 11:00pm GMT+1</option>
+                        </select>
+                      </div>
+              </div>
+              </div>
+          </div>
+          <div class="bookings">
+                <!-- <button type="button" onclick="pageRedirect()" class = "book">Book</button>       -->
+                
+            <div class="book"> <a target="_blank" href="http://localhost:3001">Book</a></div> 
+          </div>
+      </div>
+
+      <hr class="horizontal">
+      <div class="call-to-action">
+             <div class="call-t0-action-link"><a href="#">View more</a></div>
+             <div class="chevron_right"><i class="material-icons">chevron_right</i></div>  
+        </div> <br> <br>
+      </div>
+
+    </div>
+    <script src="js/quichealth.js"></script>
+</body>
+</html>

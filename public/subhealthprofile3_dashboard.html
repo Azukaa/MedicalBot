@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="atOnload6()">
+    <div class="col-12">
+        <div class="col-12 nav">
+            <a> <img src="Images/QuicHealth logo.png"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="help_dashboard.html">Contact Us</a></li>
+                <li><a href="createprofile.html">Sign Up</a></li>
+                <li><a href="signIn.html">Sign In</a></li>
+            </ul>
+
+        </div>
+        <div class="col-12 navbar-second">
+            <a href="#" onclick="showDrop()" class="dropdown"><span> &#9776;</span>
+                <div class="dropdown-content1">
+                    <a href="index.html">Home</a>
+                    <a href= "AboutUs.html"> About Us</a>
+                    <a href="services.html">Our Services</a>
+                    <a href="help_dashboard.html">Contact Us</a>
+                    <a href="createprofile.html">Sign Up</a>
+                    <a href="signIn.html">Sign In</a>
+                </div>
+            </a>
+        </div>
+    </div>    
+    </div>
+    <div class="col-12 Dashboard-parent">
+        <div class="menu">
+            
+            <div class="submenu">
+            <i class="fas fa-arrow-left"></i> <br>
+            <ul>
+               
+                <li><img src="Images/Vector.png" alt="icon" class="list_icon" > <a href="patient_dashboard.html">Overview</a></li>
+                <li> <img src="Images/appointment.png" alt="icon" class="list_icon"> <a href="appointment_dashboard.html">Appointments</a></li>
+                <li> <img src="Images/notification.png" alt="icon" class="list_icon"> <a href="notification_dashboard.html">Notification</a></li>
+                <li> <img src="Images/meeting.png" alt="icon" class="list_icon"> <a href="photo_dashboard.html">Meeting</a></li>
+                <li> <img src="Images/health_profile.png" alt="icon" class="list_icon"> <a href="#">Health Profile</a></li>
+                <li> <img src="Images/setting.png" alt="icon" class="list_icon"> <a href="settings_dashboard.html">Settings</a></li>
+                <li> <img src="Images/help.png" alt="icon" class="list_icon"> <a href="help_dashboard.html">Help</a></li>
+                <li> <img src="Images/signout.png" alt="icon" class="list_icon"> <a href="signIn.html">Sign Out</a></li>
+    
+            </ul>
+            
+            </div>
+            <header class="header">
+    
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><img src="Images/Vector.png" alt="icon" class="list_icon1" > <a href="patient_dashboard.html">Overview</a></li>
+                    <li> <img src="Images/appointment.png" alt="icon" class="list_icon1"> <a href="appointment_dashboard.html">Appointments</a></li>
+                    <li> <img src="Images/notification.png" alt="icon" class="list_icon1"> <a href="notification_dashboard.html">Notification</a></li>
+                    <li> <img src="Images/meeting.png" alt="icon" class="list_icon1"> <a href="photo_dashboard.html">Meeting</a></li>
+                    <li> <img src="Images/health_profile.png" alt="icon" class="list_icon1"> <a href="#">Health Profile</a></li>
+                    <li> <img src="Images/setting.png" alt="icon" class="list_icon1"> <a href="settings_dashboard.html">Settings</a></li>
+                    <li> <img src="Images/help.png" alt="icon" class="list_icon1"> <a href="help_dashboard.html">Help</a></li>
+                    <li> <img src="Images/signout.png" alt="icon" class="list_icon1"> <a href="signIn.html">Sign Out</a></li>
+                </ul>
+            </header>
+            
+            
+        </div>
+        <div class="health_profile">
+            <div class="health_parent">
+                <div class="health_child">
+                    <h2>Health History</h2>
+                    
+                </div>
+                <div class="comment">
+                    <div>
+                        <h2 onclick="showDoctorsComment()">Doctor's Comment</h2> 
+                    </div>
+    
+                </div>
+                <div class="comment-div col-12">
+               
+                    <div class="col-12 commentrow_div">
+                        <div>
+                            <img src="Images/pic.jpg" alt="img" class="pic">
+                            <img src="Images/pic1.jpg" alt="img" class="pic1">
+                        </div>
+                        <div>
+                            <p>Dr Alice Watson</p>
+                            <p><a href="#" class="reference">View Profile</a></p>
+                        </div>
+                        <div>
+                            <p>15/10/2020</p>
+                        </div>
+                        <div>
+                            <p>4:00PM</p>
+                        </div>
+                        <div class="last_div">
+                            <p>45 Minutes</p>
+                        </div>
+                    </div>
+                    <div id="myDIV">
+                        <div>
+                            <a onclick="showDiag()" class="btn_a active" href="#">Diagnostics</a>
+                            
+                        </div>
+                        <div>
+                            <a onclick="showLab()"  class="btn_a" href="#">Laboratory</a>
+                        </div>
+                        <div>
+                            <a onclick="showPharm()" class="btn_a" href="#">Pharmacy</a>
+                        </div>
+                        <div>
+                            <a onclick="showNotes()" class="btn_a" href="#"> Notes</a>
+                          
+                        </div>
+                    </div> 
+                    <div class="col-12">
+                        <div class="diagnostics">
+                        <textarea rows="12" cols="100" class="box">
+                        </textarea>
+                            
+                        </div>
+                        <div class="laboratory">
+                        <textarea rows="12" cols="100" class="box">
+                        </textarea>
+                        </div>
+                        <div class="pharmacy">
+                        <textarea rows="12" cols="100" class="box">
+                        </textarea>
+                        </div>
+                        <div class="notes">
+                        <textarea rows="12" cols="100" class="box">
+                        </textarea>
+                           
+                        </div>
+                        
+                    </div>
+                    
+            
+                </div>
+                <div class="health-div">
+                    
+                
+                </div>
+                
+            </div>
+            
+            
+           
+        </div>
+        
+    </div>
+
+    <script src="js/quichealth.js"></script>
+
+
+</body>
+
+</html>
